@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Prediction Result</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg,  #757070, #3b3d3d);
+            color: white;
+            height: 100vh;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            
+        }
+
+        .result-box {
+            background-color: rgb(199, 195, 195);
+            padding: 50px;
+            height: 200px;
+            border-radius: 25px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+            text-align: center;
+        }
+
+        h2 {
+            font-size: 28px;
+            margin-bottom: 20px;
+            color: #070f29;
+        }
+        h3{
+            margin-top: -5px;
+            color: #a14141;
+            bottom: 20px;
+        }
+
+        a {
+            
+            text-decoration: none;
+            color: #000000;
+            background-color: #697297;
+            padding: 12px 25px;
+            border-radius: 10px;
+            font-weight: bold;
+            transition: background 0.3s ease;
+        }
+
+        a:hover {
+            background-color: #858db3;
+        }
+        .try{
+           position: relative;
+           top: 80px; /* Moves the box 40px down */
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="result-box">
+        <h3>Prediction Result</h3>
+        <h2>{{ prediction }}</h2>
+        <div class="try">
+        <a href="/">Try Again</a>
+    </div>
+    </div>
+</body>
+</html>
